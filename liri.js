@@ -49,7 +49,10 @@ var spotify = new Spotify(keys.spotifyKeys);
     var nameOfSong = songInfo.name;
     var songLink = songInfo.preview_url;
     var albumName = songInfo.album.name;
-    console.log( artist, nameOfSong, songLink, albumName);
+    console.log("Artist: " +  artist);
+    console.log("Name Of Song: " + nameOfSong );
+    console.log("Song Link: " + songLink);
+    console.log("Album Name: " + albumName);
   })
   .catch(function(err) {
     console.log(err);
